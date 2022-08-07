@@ -15,7 +15,8 @@ body {
     padding: 0;
     background-color: var(--light);
     font-size: 16px;
-    font-family: 'Public Sans', sans-serif;    
+    font-family: 'Public Sans', sans-serif;
+    z-index: 0;    
 }
 
 h1 { 
@@ -136,7 +137,7 @@ footer ul li {
     }
 
 .welcome-hero { 
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,8 +145,12 @@ footer ul li {
 }
 
 .welcome-hero h1, 
-.welcome-hero .button-box { 
+.welcome-hero .button-box, .teaser-card{ 
     z-index: 2;
+}
+.github {
+    padding: 70px;
+    z-index: 3;
 }
 
 .welcome-hero button { 
