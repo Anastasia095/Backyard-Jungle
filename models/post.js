@@ -2,7 +2,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
-class Post extends Model { }
+class Post extends Model {}
 
 Post.init(
   //title, type string, allow null false
@@ -19,6 +19,7 @@ Post.init(
     category: {
       type: DataTypes.STRING,
       allowNull: false,
+    }
   },
   {
     sequelize,
